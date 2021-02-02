@@ -1,7 +1,3 @@
-import matplotlib
-import matplotlib.pyplot as plt
-import numpy as np
-
 #Refactored the data to be easier to work with
 #Removed the headings because they are useless
 
