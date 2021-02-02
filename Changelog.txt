@@ -1,0 +1,2 @@
+//Compacted data
+//Added splittable char to data ":"
