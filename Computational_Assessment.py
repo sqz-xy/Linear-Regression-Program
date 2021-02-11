@@ -8,8 +8,13 @@
 
 import math as mth
 import numpy as np
-from sklearn.linear_model import LinearRegression
-import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression #Shit
+import matplotlib.pyplot as plt #Graph plotting
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
+from pyhull.voronoi import VoronoiTess #PyHull modules for some fucking reason
+from pyhull.delaunay import DelaunayTri
+from pyhull.convex_hull import ConvexHull
 
 class program:
 
@@ -61,11 +66,3 @@ class program:
 newProgram = program()
 newProgram.displayGraph()
 newProgram.readFile()
-    
-
-
-
-
-
-
-
