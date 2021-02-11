@@ -29,7 +29,6 @@ class program:
     plt.show()
     
   def regression(self, fCoerc, fMag): #Regression Method
-
     X = fCoerc
     y = fMag
 
@@ -40,19 +39,18 @@ class program:
     y_precit = model.predict(X_predict)
 
   def readFile(self): #File reading method
-
     string_without_line_breaks = ""
     a_file = open("Coercivity_Mag_Data.dat", 'r')
 
     for line in a_file: #Goes through each line in the file and removes the /n
-
       stripped_line = line.rstrip()
-
       string_without_line_breaks += stripped_line
 
     a_file.close() #Closes the file
+
     NewData = string_without_line_breaks.split(":") #Splits the string into an array
     NewData.pop() #Removes the last empty value which appeared for some reason
+
     Coercivity = [] #Declares 2 arrays for Coercivity and Magnetisation
     Magnetisation = []
     Coercivity = NewData[::2] #Starts at the first element and does every other element after
